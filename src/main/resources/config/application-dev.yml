@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.2.229:5432/test
+    username: root
+    password: xiaoyi
+    driverClassName: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialization-mode: always
+  jpa:
+    show-sql: true
+    database-platform: cn.luutqf.springboot.dialect.JsonbPostgresDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+logging:
+  level:
+    root: info
+server:
+  port: 8201
+  max-http-header-size: 8192
