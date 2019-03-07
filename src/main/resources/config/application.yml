@@ -13,7 +13,8 @@ swagger:
     key-name: authorization
 spring:
   datasource:
-    url: jdbc:postgresql://192.168.2.229:5432/postgis_24_sample?useSSL=false
+#    url: jdbc:postgresql://127.0.0.1:5432/postgis_24_sample?useSSL=false
+    url: jdbc:postgresql://127.0.0.1:5432/test
     username: root
     password: xiaoyi
     driverClassName: org.postgresql.Driver
